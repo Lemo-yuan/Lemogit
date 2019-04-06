@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/show/list",
+    "pages/ideal/index",
     "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -14,5 +16,38 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "微信树洞",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/show/list",
+        "iconPath": "images/icon-list.png",
+        "selectedIconPath": "images/icon-list-2.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/ideal/index",
+        "iconPath": "images/icon-ideal.png",
+        "selectedIconPath": "images/icon-ideal-2.png",
+        "text": "想法"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon-message.png",
+        "selectedIconPath": "images/icon-message-2.png",
+        "text": "通知"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon-index.png",
+        "selectedIconPath": "images/icon-index-2.png",
+        "text": "我的"
+      }
+    ],
+    "position": "bottom"
   }
 }

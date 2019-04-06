@@ -10,6 +10,10 @@ App({
       })
     }
 
-    this.globalData = {}
+    this.globalData = {
+
+      serverPath:'http://localhost:8080/',
+      
+    }
   }
 })

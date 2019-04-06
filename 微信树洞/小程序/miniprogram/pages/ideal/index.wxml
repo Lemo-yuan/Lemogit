@@ -1,0 +1,3 @@
+<!--pages/ideal/index.wxml-->
+
+<image class="editimage" src='../../images/edit-square.png'></image>
