@@ -1,3 +1,23 @@
-<!--pages/ideal/index.wxml-->
 
-<image class="editimage" src='../../images/edit-square.png'></image>
+<view style='width:99%;height:99%;border:1px solid blue;position: fixed;'>
+  <view style='height:300rpx;border:1px solid gray;'>
+      <view style='border:1px solid green;height:55px;'>
+        <view style='border:1px solid red;width:20%;float:left;margin-left:10px;'>
+            <image src='../../images/meizi.jpg' style='border:1px solid blue; width:100rpx;height:100rpx;radi;border-radius:45px;'></image>
+        </view>
+        <view style='width:60%;border:1px solid red;margin-left:80px;margin-top:10px;'>         七瑾年
+        </view>
+      </view> 
+      <view style='border:1px solid red;height:60px;width:100%;'>
+      sagasdgfsafdsfvsdasdsadsadsadsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        <view>
+        </view>
+      </view>
+   </view>
+  
+ 
+
+</view>
+
+
+<!-- <image class="editimage" src='../../images/edit-square.png'></image> -->
