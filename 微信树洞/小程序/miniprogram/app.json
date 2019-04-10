@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/authorize/index",
     "pages/show/list",
     "pages/ideal/index",
     "pages/index/index",

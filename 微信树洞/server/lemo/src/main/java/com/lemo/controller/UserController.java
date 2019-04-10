@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-
+import java.util.UUID;
 /**
  * @Author: laojie
  * @Date: $(DATE) $(TIME)
@@ -31,5 +31,13 @@ public class UserController {
     public void test(){
         LOGGER.info("测试日志");
     }
+
+    @RequestMapping(value="/adduser")
+    private void insertintoUser(User user){
+        user.setId(UUID.randomUUID().toString());
+        LOGGER.info(user);
+        userService.insertintoUser(user);
+    }
+
 
 }

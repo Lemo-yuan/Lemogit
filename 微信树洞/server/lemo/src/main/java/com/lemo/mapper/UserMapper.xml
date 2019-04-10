@@ -4,6 +4,11 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lemo.mapper.UserMapper">
     <select id="loadUserByUserNameAndPwd" resultType="com.lemo.bean.User">
-        SELECT * FROM user WHERE 1=1
+        SELECT * FROM WXSD_USER WHERE 1=1
     </select>
+
+    <insert id="insertintoUser" parameterType="com.lemo.bean.User" >
+        insert into WXSD_USER (ID,user_name,avatarurl,province,city,sex) values (#{id},#{user_name},#{avatarurl},#{province},#{city},#{sex})
+    </insert>
+
 </mapper>
