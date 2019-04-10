@@ -4,137 +4,79 @@ import java.sql.Timestamp;
 import java.util.List;
 
 public class User {
-    private Long id;
-    private String username;
-    private String password;
-    private String nickname;
-    private boolean enabled;
-    private List<Role> roles;
-    private String email;
-    private String userface;
-    private Timestamp regTime;
-    private String phone;
-    private String yzm;
+   private String id;
+   private String user_name;
+   private String avatarurl;
+   private String province;
+   private String city;
+   private int sex;
 
-    public User() {
-    }
-
-    public User(Long id, String username, String password, String nickname, boolean enabled, List<Role> roles, String email, String userface, Timestamp regTime, String phone, String yzm) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-        this.nickname = nickname;
-        this.enabled = enabled;
-        this.roles = roles;
-        this.email = email;
-        this.userface = userface;
-        this.regTime = regTime;
-        this.phone = phone;
-        this.yzm = yzm;
-    }
-
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUser_name() {
+        return user_name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUser_name(String user_name) {
+        this.user_name = user_name;
     }
 
-    public String getPassword() {
-        return password;
+    public String getAvatarurl() {
+        return avatarurl;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setAvatarurl(String avatarurl) {
+        this.avatarurl = avatarurl;
     }
 
-    public String getNickname() {
-        return nickname;
+    public String getProvince() {
+        return province;
     }
 
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
+    public void setProvince(String province) {
+        this.province = province;
     }
 
-    public boolean isEnabled() {
-        return enabled;
+    public String getCity() {
+        return city;
     }
 
-    public void setEnabled(boolean enabled) {
-        this.enabled = enabled;
+    public void setCity(String city) {
+        this.city = city;
     }
 
-    public List<Role> getRoles() {
-        return roles;
+    public int getSex() {
+        return sex;
     }
 
-    public void setRoles(List<Role> roles) {
-        this.roles = roles;
+    public void setSex(int sex) {
+        this.sex = sex;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getUserface() {
-        return userface;
-    }
-
-    public void setUserface(String userface) {
-        this.userface = userface;
-    }
-
-    public Timestamp getRegTime() {
-        return regTime;
-    }
-
-    public void setRegTime(Timestamp regTime) {
-        this.regTime = regTime;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getYzm() {
-        return yzm;
-    }
-
-    public void setYzm(String yzm) {
-        this.yzm = yzm;
+    public User(String id, String user_name, String avatarurl, String province, String city, int sex) {
+        this.id = id;
+        this.user_name = user_name;
+        this.avatarurl = avatarurl;
+        this.province = province;
+        this.city = city;
+        this.sex = sex;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", nickname='" + nickname + '\'' +
-                ", enabled=" + enabled +
-                ", roles=" + roles +
-                ", email='" + email + '\'' +
-                ", userface='" + userface + '\'' +
-                ", regTime=" + regTime +
-                ", phone='" + phone + '\'' +
-                ", yzm='" + yzm + '\'' +
+                "id='" + id + '\'' +
+                ", user_name='" + user_name + '\'' +
+                ", avatarurl='" + avatarurl + '\'' +
+                ", province='" + province + '\'' +
+                ", city='" + city + '\'' +
+                ", sex=" + sex +
                 '}';
     }
 }

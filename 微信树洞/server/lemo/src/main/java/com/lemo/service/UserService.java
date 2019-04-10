@@ -20,4 +20,8 @@ public class UserService {
     public User loadUserByUserNameAndPwd(){
         return userMapper.loadUserByUserNameAndPwd();
     }
+
+    public void insertintoUser(User user){
+        userMapper.insertintoUser(user);
+    }
 }

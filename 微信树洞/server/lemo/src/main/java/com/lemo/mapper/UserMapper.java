@@ -13,4 +13,5 @@ import org.springframework.stereotype.Repository;
 @Mapper
 public interface UserMapper {
     User loadUserByUserNameAndPwd();
+    void insertintoUser(User user);
 }
